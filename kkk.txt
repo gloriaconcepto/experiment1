@@ -1,0 +1,23 @@
+// recursive  non tail function
+  def fib(prevPrev: Int, prev: Int) {
+    val next = prevPrev + prev
+    println(next)
+    if (next > 1000000) System.exit(0)
+    fib(prev, next)}
+
+ 
+ 
+   def fib(n:Long):Long = {
+  def fibHelper(n:Long, a:Long, b:Long):Long = {
+    if(n == 0) a
+    else fibHelper(n - 1, b, a + b)
+  }
+  return fibHelper(n, 0, 1)
+}
+ 
+  
+
+
+val height = 1.9d
+val name = "James"
+println(f"$name%s is $height%2.2f meters tall") //James is 1.90 meters tall
